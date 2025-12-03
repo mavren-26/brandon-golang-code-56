@@ -1,0 +1,32 @@
+Problem  — Build a Simple In-Memory Key-Value Store
+
+Description:
+Create a key-value store in Go that supports the following operations:
+
+SET key value
+GET key
+DELETE key
+EXISTS key  // returns true/false
+
+
+Use a map[string]string internally.
+Your function should parse commands and return the output.
+
+Test Example
+
+Input:
+
+SET name Sam
+GET name
+EXISTS age
+DELETE name
+GET name
+
+
+Output:
+
+OK
+Sam
+false
+OK
+key_not_found
